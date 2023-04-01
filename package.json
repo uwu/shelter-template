@@ -1,16 +1,8 @@
 {
   "devDependencies": {
-    "@uwu/lune": "^1.1.4",
+    "@uwu/lune": "^1.2.1",
     "@uwu/shelter-defs": "^1.1.0"
   },
   "type": "module",
-  "workspaces": ["plugins/*"],
-  "//1": "this unfortunately cannot be fixed on lune's end; overrides for npm, resolutions for yarn/pnpm",
-  "//2": "See https://discord.com/channels/824921608560181258/824923929138954241/1091669841154428978 for info",
-  "overrides": {
-    "babel-plugin-jsx-dom-expressions": "0.35.23"
-  },
-  "resolutions": {
-    "babel-plugin-jsx-dom-expressions": "0.35.23"
-  }
+  "workspaces": ["plugins/*"]
 }
