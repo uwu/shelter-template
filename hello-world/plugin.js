@@ -1,1 +1,38 @@
-(()=>{var t=Object.defineProperty;var f=Object.getOwnPropertyDescriptor;var s=Object.getOwnPropertyNames;var c=Object.prototype.hasOwnProperty;var h=(e,o)=>{for(var r in o)t(e,r,{get:o[r],enumerable:!0})},i=(e,o,r,n)=>{if(o&&typeof o=="object"||typeof o=="function")for(let l of s(o))!c.call(e,l)&&l!==r&&t(e,l,{get:()=>o[l],enumerable:!(n=f(o,l))||n.enumerable});return e};var u=e=>i(t({},"__esModule",{value:!0}),e);var p={};h(p,{onLoad:()=>a,onUnload:()=>m});var{util:{log:d}}=shelter;function a(){d("Hello, World from shelter!")}function m(){d("Goodbye, World from shelter!")}return u(p);})();
+(() => {
+  var __defProp = Object.defineProperty;
+  var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
+  var __getOwnPropNames = Object.getOwnPropertyNames;
+  var __hasOwnProp = Object.prototype.hasOwnProperty;
+  var __export = (target, all) => {
+    for (var name in all)
+      __defProp(target, name, { get: all[name], enumerable: true });
+  };
+  var __copyProps = (to, from, except, desc) => {
+    if (from && typeof from === "object" || typeof from === "function") {
+      for (let key of __getOwnPropNames(from))
+        if (!__hasOwnProp.call(to, key) && key !== except)
+          __defProp(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable });
+    }
+    return to;
+  };
+  var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
+
+  // plugins/hello-world/index.jsx
+  var hello_world_exports = {};
+  __export(hello_world_exports, {
+    onLoad: () => onLoad,
+    onUnload: () => onUnload
+  });
+  var {
+    util: {
+      log
+    }
+  } = shelter;
+  function onLoad() {
+    log("Hello, World from shelter!");
+  }
+  function onUnload() {
+    log("Goodbye, World from shelter!");
+  }
+  return __toCommonJS(hello_world_exports);
+})();
